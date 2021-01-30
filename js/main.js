@@ -1,16 +1,15 @@
 /* eslint-disable node/no-unsupported-features/node-builtins */
 (function($, moment, ClipboardJS, config) {
-    console.log('enter main js function')
+    console.log("enter main.js")
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
             $(this).wrap('<a class="gallery-item" href="' + $(this).attr('src') + '"></a>');
             if (this.alt) {
                 // $(this).after('<p class="has-text-centered is-size-6 caption">' + this.alt + '</p>');
-                $(this).after('<p class="has-text-centered is-size-6 caption">' + '<br>' + '</p>');
+                // $(this).after('<p class="has-text-centered is-size-6 caption">' + '<br>' + '</p>');  //modified in article.styl
             }
         }
-        console.log('do wrap img function')
     });
 
     if (typeof $.fn.lightGallery === 'function') {
@@ -141,9 +140,4 @@
 
     $('div.container div.card[data-type=tags]').addClass('is-hidden-mobile');
     $('div.container div.card[data-type=archives]').addClass('is-hidden-mobile');
-
-
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
-
-
-

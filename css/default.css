@@ -10788,7 +10788,7 @@ article.media .media-content .title {
   line-height: inherit;
 }
 article.article {
-  padding: 1.5rem 1.8rem;
+  padding: 2rem 2.2rem;
 }
 article.article .title {
   margin: 0 0 0.5rem -0.1rem !important;
@@ -10878,9 +10878,10 @@ article.article .content .message.message-immersive {
 article.article .content .message.message-immersive .message-body {
   border: none;
 }
-article.article .content a img {
-  margin: auto;
+article.article .content img {
   display: block;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 .rtl {
   direction: rtl;
